@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-system</title>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
+    crossorigin="anonymous">
+    <style>
+        [class*="col"] {
+            background-color: rgba(180, 248, 248, 0.652);
+            border: 1px solid yellowgreen;
+            color: rgb(0, 0, 0);
+        }
+
+        h4{
+            text-align: center;
+        }
+        .row {
+            border: 1px solid rgb(255, 0, 0);
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h4>Default(auto) Auto-layout columns: Equal-width</h4>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col border">.col</div>
+            <div class="col border">.col</div>
+            <div class="col border">.col</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h4>Setting one column width</h4>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">.col</div>
+            <div class="col-6">.col-6</div>
+            <div class="col">.col</div>
+        </div>
+        <div class="row">
+            <div class="col">.col</div>
+            <div class="col-5">.col-5</div>
+            <div class="col">.col</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h4>Variable width content: Use col-{breakpoint}-auto classes to size columns based on the natural width of their content.</h4>
+    
+    <div class="container text-center">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">.col<br>.col-lg-2</div>
+            <div class="col-md-auto">Variable width content(.col-md-auto)</div>
+            <div class="col col-lg-2">.col<br>.col-lg-2</div>
+        </div>
+        <div class="row">
+            <div class="col">.col</div>
+            <div class="col-md-auto">Variable width content(.col-md-auto)</div>
+            <div class="col col-lg-2">.col<br>.col-lg-2</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h4>Responsive classes:All breakpoints</h4>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">.col</div>
+            <div class="col">.col</div>
+            <div class="col">.col</div>
+            <div class="col">.col</div>
+        </div>
+        <div class="row">
+            <div class="col-8">col-8</div>
+            <div class="col-4">col-4</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h4>Responsive classes:Stacked to horizontal</h4>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-8">col-sm-8</div>
+            <div class="col-sm-4">col-sm-4</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">col-sm</div>
+            <div class="col-sm">col-sm</div>
+            <div class="col-sm">col-sm</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h4>Responsive classes:Mix and match</h4>
+    <div class="container text-center">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+            <div class="col-md-8">.col-md-8</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+            <div class="col-6">.col-6</div>
+            <div class="col-6">.col-6</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h4>Responsive classes:Row columns(.row .row-cols-2)</h4>
+    <div class="container text-center">
+        <div class="row row-cols-2">
+            <div class="col">.col</div>
+            <div class="col">.col</div>
+            <div class="col">.col</div>
+            <div class="col">.col</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h4>Responsive classes:Row columns(.row .row-cols-3)</h4>
+    <div class="container text-center">
+        <div class="row row-cols-3">
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h4>Responsive classes:Row columns with their natural width(.row .row-cols-auto)</h4>
+    <div class="container text-center">
+        <div class="row row-cols-auto">
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Columnnnnnnnnnnnnn</div>
+            <div class="col">Column</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h4>Responsive classes:Row columns(.row .row-cols-4)</h4>
+    <div class="container text-center">
+        <div class="row row-cols-4">
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h4>Responsive classes:Row columns(customize colum: see the comment)--(.row .row-cols-3)</h4>
+    <div class="container text-center">
+        <!-- protita row te 3 ta kore colum thakbe, so col-4 eta auto set hoye jabe.
+        so col-6 colum ta tin number e ase. so col-4 + col-4 = col-8 hoye jasse 1st doita
+        mile. porer ta hosse col-6 so eta same line e jaiga hove na tai niche neme jabe. but col-6 na hoye col-3 ba aro kom hole same line ei thakto -->
+        <div class="row row-cols-3">
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col-6">Column</div>
+            <div class="col">Column</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h4>Responsive classes:Row columns_customized(.row .row-cols-4)</h4>
+    <div class="container text-center">
+        <div class="row row-cols-4">
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col-6">Column</div>
+            <div class="col">Column</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h4>Responsive classes:Row columns_customized(.row .row-cols-1 .row-cols-sm-2 .row-cols-md-4)</h4>
+    <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="col-8">Column</div>
+    <div class="col-4">Column</div>
+    <br>
+    <br>
+    
+
+
+    <script 
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" 
+        crossorigin="anonymous">
+    </script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" 
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" 
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
