@@ -111,8 +111,34 @@
     </div>
     <br>
     <br>
+    <h5>Columns Breaks</h5>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+            <!-- <div class="col-6 col-sm-3">.col-6 .col-sm-3</div> -->
+
+            <!-- Force next columns to break to new line -->
+            <div class="w-100"></div>
+        
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+        </div>
+    </div>
     <br>
     <br>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+            <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+        
+            <!-- Force next columns to break to new line at md breakpoint and up -->
+            <div class="w-100 d-none d-md-block"></div>
+        
+            <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+            <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+        </div>
+    </div>
     <br>
     <br>
     <br>
