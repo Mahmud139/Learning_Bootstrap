@@ -10,6 +10,11 @@
     rel="stylesheet" 
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
     crossorigin="anonymous">
+    <style>
+        h3 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <h3 class="text-center">Basic Table</h3>
@@ -221,6 +226,39 @@
     </div>
     <br>
     <br>
+    <h3>Active tables:Highlight a table row or cell by adding a .table-active class.</h3>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-active">
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry the Bird</td>
+                    <td>Thornton</td>
+                    <td class="table-active">@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <br>
     <br>
     <br>
